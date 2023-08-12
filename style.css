@@ -1,0 +1,116 @@
+body{
+    overflow: hidden;
+    background-color: #000000;
+    background: url(Your\ Name.jfif);
+}
+h1{
+    color: #ffffff;
+    margin-bottom: 70px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+.container{
+    border: 1px solid green;
+    padding: 100px;
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+}
+.input-group label{
+    display: flex;
+    position: absolute;
+}
+.input-group_login label{
+    display: flex;
+    position: absolute;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.input-group_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+.input-group__input{
+    font: poppins;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    outline: 2px solid #ffffff;
+    background-color: transparent;
+    transition: outline-color 500ms;
+}
+.input-group__input_login{
+    font: inherit;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    outline: 2px solid #ffffff;
+    background-color: transparent;
+    transition: outline-color 500ms;
+}
+.input-group__input:is(:focus, :valid){
+    outline-color: #10d309;
+}
+.input-group__input_login:is(:focus, :valid){
+    outline-color: #10d309;
+}
+.input-group__label{
+    position: relative;
+    font-size: 18px;
+    transition: 10px 10px;
+    color: #ffffff;
+    transition: translate 500ms, scale 500ms;
+}
+.input-group__label_login{
+    position: relative;
+    font-size: 18px;
+    transition: 10px 10px;
+    color: #ffffff;
+    transition: translate 500ms, scale 500ms;
+}
+.input-group__input:focus +
+.input-group__label,
+.input-group__input:valid +
+.input-group__label{
+    padding-inline: 5px;
+    translate: -75px -30px;
+    scale: 0.8;
+    
+}
+.input-group__input_login:focus +
+.input-group__label_login,
+.input-group__input_login:valid +
+.input-group__label_login{
+    padding-inline: 5px;
+    translate: -75px -30px;
+    scale: 0.8;
+    
+}
+
+.btn-login{
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 50px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: rgb(124, 7, 7);
+}
